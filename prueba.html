@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prueba fantasmilla</title>
+</head>
+<body>
+  <div id="pantalla"></div>
+
+  <script src="fantasmilla.js"></script>
+  <script>
+    iniciarFantasmilla(document.getElementById('pantalla'), () => {
+      document.getElementById('pantalla').innerHTML = '<h2>¡Minijuego completado!</h2>';
+    }, { meta: 1200, permitirSaltar: true });
+  </script>
+</body>
+</html>
